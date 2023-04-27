@@ -104,7 +104,7 @@ it ('Attempt exam and fail section with marks less than 70 % and verify that use
     cy.ClearSection()
     })
 
-it.only('Attempt exam and fail the section for available number of attempts and verify loading of lockout period modal' , function() {
+it ('Attempt exam and fail the section for available number of attempts and verify loading of lockout period modal' , function() {
     cy.visit('https://exam-template-refactoring.herokuapp.com?examId=63075ad3cb9bde0004366d5a&token=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzaGVoc2F3YXIuYWxpKzQ2QGFyYmlzb2Z0LmNvbSIsInNjb3BlcyI6WyJWRVJJRklFRCJdfQ.i3HqDp_yy2XIUZLIJL6UbplGF81_FoO9u_XC6fCdBUZIuRonI_JrafhfN1sBVFJziCaYzuk1g5tRgoh_EYez4w')
     cy.url().should('include','/instructions')
     cy.contains('Get Started').click()
