@@ -2,11 +2,12 @@ const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
   e2e: {
+    baseUrl:'https://cinch-refactored.herokuapp.com',
     setupNodeEvents(on, config) {
       // implement node event listeners here
       if (config.env.ENVIRONMENT == "CinchTests"){
         return{
-          baseUrl:"https://cinch-refactored.herokuapp.com",
+          baseUrl:'https://cinch-refactored.herokuapp.com',
           specPattern: "cypress/e2e/CinchTests/**/*.cy.{js,jsx}",
           chromeWebSecurity: false
         }
