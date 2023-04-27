@@ -7,7 +7,7 @@ module.exports = defineConfig({
       if (config.env.ENVIRONMENT == "CinchTests"){
         return{
           baseUrl:"https://cinch-refactored.herokuapp.com",
-          specPattern: "cypress/e2e/CinchTests/**/*.cy.js",
+          specPattern: "cypress/e2e/CinchTests/**/*.cy.{js,jsx}",
           chromeWebSecurity: false
         }
       }
