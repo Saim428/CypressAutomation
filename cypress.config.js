@@ -4,24 +4,9 @@ module.exports = defineConfig({
   e2e: {
     setupNodeEvents(on, config) {
       // implement node event listeners here
-      if (config.env.ENVIRONMENT == "Assignment1"){
-        return{
-          baseUrl:"https://the-internet.herokuapp.com/",
-          specPattern: "cypress/e2e/Assignment1/**/*.cy.js",
-          chromeWebSecurity: false
-        }
-      }
-      else if (config.env.ENVIRONMENT == "Assignment2and3"){
-        return{
-          baseUrl:"https://parabank.parasoft.com",
-          specPattern: "cypress/e2e/Assignment2and3/**/*.cy.js",
-          chromeWebSecurity: false
-        }
-      }
-      
       if (config.env.ENVIRONMENT == "CinchTests"){
         return{
-          baseUrl:"https://cinch-refactored.herokuapp.com/",
+          baseUrl:"https://cinch-refactored.herokuapp.com",
           specPattern: "cypress/e2e/CinchTests/**/*.cy.js",
           chromeWebSecurity: false
         }

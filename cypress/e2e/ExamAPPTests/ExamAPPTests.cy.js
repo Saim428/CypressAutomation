@@ -2,6 +2,7 @@
 
 
 describe('Attempt exam on Exam APP',function(){
+
 it  ('Attempt exam and pass the section with passing marks i-e more than 70% and verify the visibility of wrong answered questions on result page' , function() {
     cy.visit('https://exam-template-refactoring.herokuapp.com?examId=63075ad3cb9bde0004366d5a&token=Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzaGVoc2F3YXIuYWxpKzQ2QGFyYmlzb2Z0LmNvbSIsInNjb3BlcyI6WyJWRVJJRklFRCJdfQ.i3HqDp_yy2XIUZLIJL6UbplGF81_FoO9u_XC6fCdBUZIuRonI_JrafhfN1sBVFJziCaYzuk1g5tRgoh_EYez4w')
     cy.url().should('include','/instructions')

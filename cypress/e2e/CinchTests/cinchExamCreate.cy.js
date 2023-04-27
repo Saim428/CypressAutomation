@@ -26,7 +26,7 @@ const createQuestion = new CreateQuestion()
 it('cinch login test' , function() {
     //let url = Cypress.config().baseUrl;
     //cy.visit(url)
-    cy.visit('login')
+    cy.visit('https://cinch-refactored.herokuapp.com/login')
     cy.get(':nth-child(1) > .form-control').type('admin')
     cy.get(':nth-child(2) > .form-control').type('admin')
     cy.get('.btn').click()
