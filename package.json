@@ -4,11 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "cypress:open_CinchTests": "npx cypress open --env ENVIRONMENT=CinchTests",
-    "cypress:run_CinchTests": "npx cypress run --env ENVIRONMENT=CinchTests",
-    "cypress:open_ExamAppTests": "npx cypress open --env ENVIRONMENT=ExamAppTests",
-    "cypress:run_ExamAppTests": "npx cypress run --env ENVIRONMENT=ExamAppTests",
+    "test": "node_module\\.bin\\cypress run",
+    "headTest":"npx run test -- --headed",
+    "chromeTest":"npx run test -- --browser chrome",
     "cypress:open": "cypress open"
   },
   "author": "",
